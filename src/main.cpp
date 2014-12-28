@@ -15,9 +15,12 @@
  */
 
 #include "applicationui.hpp"
+#include "TextManager.hpp"
 
 #include <bb/cascades/Application>
+#include <bb/cascades/QmlDocument>
 
+#include <QtCore>
 #include <QLocale>
 #include <QTranslator>
 
@@ -32,6 +35,10 @@ Q_DECL_EXPORT int main(int argc, char **argv)
     // Create the Application UI object, this is where the main.qml file
     // is loaded and the application scene is set.
     ApplicationUI appui;
+
+    //File downloader
+    TextManager manager;
+    QmlDocument::defaultDeclarativeEngine()->rootContext()->setContextProperty("_manager", &manager);
 
     // Enter the application main event loop.
     return Application::exec();

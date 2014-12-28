@@ -51,5 +51,13 @@
         <source>Your Key</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Load PIN</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Load App Version</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 </TS>
